@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html.lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="icono_sos_rara.png">
+        <title>Encriptador Sos Rara</title>
+         
+    </head>
+
+    <body > 
+
+        <div class="container">
+                                            
+            <div class= "caja-header">
+              <img src="logo_sos_rara.jpg" alt="Logo Sos Rara">
+            </div>    
+                       
+            <div class= "caja-introduzca-texto">                                        
+                <textarea class="textarea" id="texto" pattern="^[a-z]+$" placeholder="Ingrese el texto aqui"></textarea>
+
+                <div class="caja-alerta">
+                    <iconify-icon icon="bi:exclamation-circle-fill" style="color: #888;"></iconify-icon>
+                    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+                    <p class="mensaje-alerta">Solo letras minúsculas y sin acentos</p id="x">
+                </div>
+            
+                <div class="botonera">
+                    <input class="boton1" type="button" value="Encriptar" id="boton-encriptar">
+                    <input class="boton2" type="button" value="Desencriptar" id="boton-desencriptar">
+                </div>
+                        
+            </div>
+                         
+            <div class="caja-lateral">
+                
+                <div class ="subcaja-lateral-con-imagen-y-texto">
+                    <img class="imagen-lateral" src="pac-man-amarillo.png" alt="Imagen lateral pac-man amarillo" id="a">
+               
+                    <div class="texto-subcaja" id="b">
+                        <p class="ningun-mensaje">Ningún mensaje fue encontrado</p>
+                        <p class="opcion-mensaje">Ingresa el texto que desees encriptar o desencriptar</p>
+                    </div>
+
+                </div>
+
+                <div class="caja-con-mensaje" id="c">
+                    <textarea class="texto-salida" id="msg"></textarea>
+                    <input class="boton-copiar" onclick="myFunction()" type="button" value="Copiar" id="btn-copy">
+                </div>
+                                                           
+            </div>
+            
+        </div>
+        
+        <script src="script.js"></script>
+        
+
+    </body>
+       
+</html>
+
